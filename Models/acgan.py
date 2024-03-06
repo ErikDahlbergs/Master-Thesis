@@ -33,7 +33,7 @@ parser.add_argument("--nr_workers", type = int, default=2, help="number of data 
 opt = parser.parse_args()
 
 print(opt)
-dataroot = "./Data (GAN)" 
+dataroot = "Datasets/Data (GAN)"
 image_size = opt.img_size # Spatial size of training images. All images will be resized to this #   size using a transformer.
 
 # cuda = True if torch.cuda.is_available() else False

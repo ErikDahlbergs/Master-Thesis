@@ -6,7 +6,7 @@ import torchvision.transforms.functional as TF
 from PIL import Image
 from torchvision import transforms
 import matplotlib.pyplot as plt
-from imageload import ImageLoad
+from /imageload import ImageLoad
 import numpy as np
 import tqdm
 
