@@ -1,0 +1,11 @@
+prefix=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.4
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

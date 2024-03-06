@@ -1,0 +1,14 @@
+prefix=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis
+exec_prefix=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis
+libdir=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis/lib
+includedir=/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: 
+Libs: -L/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis/lib -lfreetype
+Libs.private: -lz -L/Users/erikdahlberg/Documents/1. LTH/Examensarbete/Code/.pytorch_thesis/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

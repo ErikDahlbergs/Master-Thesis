@@ -1,0 +1,101 @@
+==> 2024-02-21 09:55:20 <==
+# cmd: /Users/erikdahlberg/anaconda3/bin/conda create -p .pytorch_thesis
+# conda version: 24.1.2
+==> 2024-02-21 09:59:36 <==
+# cmd: /Users/erikdahlberg/anaconda3/bin/conda install pytorch::pytorch torchvision torchaudio -c pytorch
+# conda version: 24.1.2
++defaults/noarch::charset-normalizer-2.0.4-pyhd3eb1b0_0
++defaults/noarch::tzdata-2023d-h04d1e81_0
++defaults/osx-arm64::blas-1.0-openblas
++defaults/osx-arm64::brotli-python-1.0.9-py312h313beb8_7
++defaults/osx-arm64::bzip2-1.0.8-h620ffc9_4
++defaults/osx-arm64::ca-certificates-2023.12.12-hca03da5_0
++defaults/osx-arm64::certifi-2024.2.2-py312hca03da5_0
++defaults/osx-arm64::expat-2.5.0-h313beb8_0
++defaults/osx-arm64::filelock-3.13.1-py312hca03da5_0
++defaults/osx-arm64::freetype-2.12.1-h1192e45_0
++defaults/osx-arm64::idna-3.4-py312hca03da5_0
++defaults/osx-arm64::jinja2-3.1.3-py312hca03da5_0
++defaults/osx-arm64::jpeg-9e-h80987f9_1
++defaults/osx-arm64::lcms2-2.12-hba8e193_0
++defaults/osx-arm64::lerc-3.0-hc377ac9_0
++defaults/osx-arm64::libcxx-14.0.6-h848a8c0_0
++defaults/osx-arm64::libdeflate-1.17-h80987f9_1
++defaults/osx-arm64::libffi-3.4.4-hca03da5_0
++defaults/osx-arm64::libgfortran-5.0.0-11_3_0_hca03da5_28
++defaults/osx-arm64::libgfortran5-11.3.0-h009349e_28
++defaults/osx-arm64::libjpeg-turbo-2.0.0-h1a28f6b_0
++defaults/osx-arm64::libopenblas-0.3.21-h269037a_0
++defaults/osx-arm64::libpng-1.6.39-h80987f9_0
++defaults/osx-arm64::libtiff-4.5.1-h313beb8_0
++defaults/osx-arm64::libwebp-base-1.3.2-h80987f9_0
++defaults/osx-arm64::llvm-openmp-14.0.6-hc6e5704_0
++defaults/osx-arm64::lz4-c-1.9.4-h313beb8_0
++defaults/osx-arm64::markupsafe-2.1.3-py312h80987f9_0
++defaults/osx-arm64::mpmath-1.3.0-py312hca03da5_0
++defaults/osx-arm64::ncurses-6.4-h313beb8_0
++defaults/osx-arm64::networkx-3.1-py312hca03da5_0
++defaults/osx-arm64::numpy-1.26.3-py312h7f4fdc5_0
++defaults/osx-arm64::numpy-base-1.26.3-py312he047099_0
++defaults/osx-arm64::openjpeg-2.3.0-h7a6adac_2
++defaults/osx-arm64::openssl-3.0.13-h1a28f6b_0
++defaults/osx-arm64::pillow-10.2.0-py312h80987f9_0
++defaults/osx-arm64::pip-23.3.1-py312hca03da5_0
++defaults/osx-arm64::pysocks-1.7.1-py312hca03da5_0
++defaults/osx-arm64::python-3.12.1-h99e199e_0
++defaults/osx-arm64::pyyaml-6.0.1-py312h80987f9_0
++defaults/osx-arm64::readline-8.2-h1a28f6b_0
++defaults/osx-arm64::requests-2.31.0-py312hca03da5_1
++defaults/osx-arm64::setuptools-68.2.2-py312hca03da5_0
++defaults/osx-arm64::sqlite-3.41.2-h80987f9_0
++defaults/osx-arm64::sympy-1.12-py312hca03da5_0
++defaults/osx-arm64::tk-8.6.12-hb8d0fd4_0
++defaults/osx-arm64::typing_extensions-4.9.0-py312hca03da5_1
++defaults/osx-arm64::urllib3-2.1.0-py312hca03da5_1
++defaults/osx-arm64::wheel-0.41.2-py312hca03da5_0
++defaults/osx-arm64::xz-5.4.5-h80987f9_0
++defaults/osx-arm64::yaml-0.2.5-h1a28f6b_0
++defaults/osx-arm64::zlib-1.2.13-h5a0b063_0
++defaults/osx-arm64::zstd-1.5.5-hd90d995_0
++pytorch/osx-arm64::pytorch-2.2.0-py3.12_0
++pytorch/osx-arm64::torchaudio-2.2.0-py312_cpu
++pytorch/osx-arm64::torchvision-0.17.0-py312_cpu
+# update specs: ['pytorch::pytorch', 'torchaudio', 'torchvision']
+==> 2024-02-21 10:02:49 <==
+# cmd: /Users/erikdahlberg/anaconda3/bin/conda install scikit-learn
+# conda version: 24.1.2
++defaults/noarch::threadpoolctl-2.2.0-pyh0d69192_0
++defaults/osx-arm64::joblib-1.2.0-py312hca03da5_0
++defaults/osx-arm64::scikit-learn-1.3.0-py312hd77ebd4_2
++defaults/osx-arm64::scipy-1.11.4-py312hfa28a95_0
+# update specs: ['scikit-learn']
+==> 2024-02-21 10:03:14 <==
+# cmd: /Users/erikdahlberg/anaconda3/bin/conda install pandas
+# conda version: 24.1.2
++defaults/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0
++defaults/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
++defaults/noarch::six-1.16.0-pyhd3eb1b0_1
++defaults/osx-arm64::bottleneck-1.3.5-py312ha86b861_0
++defaults/osx-arm64::numexpr-2.8.7-py312h0f3ea24_0
++defaults/osx-arm64::pandas-2.1.4-py312hd77ebd4_0
++defaults/osx-arm64::pytz-2023.3.post1-py312hca03da5_0
+# update specs: ['pandas']
+==> 2024-02-21 10:06:38 <==
+# cmd: /Users/erikdahlberg/anaconda3/bin/conda install matplotlib
+# conda version: 24.1.2
++defaults/noarch::cycler-0.11.0-pyhd3eb1b0_0
++defaults/noarch::fonttools-4.25.0-pyhd3eb1b0_0
++defaults/noarch::munkres-1.1.4-py_0
++defaults/osx-arm64::brotli-1.0.9-h1a28f6b_7
++defaults/osx-arm64::brotli-bin-1.0.9-h1a28f6b_7
++defaults/osx-arm64::contourpy-1.2.0-py312h48ca7d4_0
++defaults/osx-arm64::kiwisolver-1.4.4-py312h313beb8_0
++defaults/osx-arm64::libbrotlicommon-1.0.9-h1a28f6b_7
++defaults/osx-arm64::libbrotlidec-1.0.9-h1a28f6b_7
++defaults/osx-arm64::libbrotlienc-1.0.9-h1a28f6b_7
++defaults/osx-arm64::matplotlib-3.8.0-py312hca03da5_0
++defaults/osx-arm64::matplotlib-base-3.8.0-py312hd77ebd4_0
++defaults/osx-arm64::packaging-23.1-py312hca03da5_0
++defaults/osx-arm64::pyparsing-3.0.9-py312hca03da5_0
++defaults/osx-arm64::tornado-6.3.3-py312h80987f9_0
+# update specs: ['matplotlib']

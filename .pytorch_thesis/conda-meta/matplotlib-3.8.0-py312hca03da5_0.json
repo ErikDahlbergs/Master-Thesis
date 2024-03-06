@@ -1,0 +1,33 @@
+{
+  "build": "py312hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base >=3.8.0,<3.8.1.0a0",
+    "python >=3.12,<3.13.0a0",
+    "tornado >=5"
+  ],
+  "extracted_package_dir": "/Users/erikdahlberg/anaconda3/pkgs/matplotlib-3.8.0-py312hca03da5_0",
+  "files": [],
+  "fn": "matplotlib-3.8.0-py312hca03da5_0.conda",
+  "license": "LicenseRef-PSF-based",
+  "link": {
+    "source": "/Users/erikdahlberg/anaconda3/pkgs/matplotlib-3.8.0-py312hca03da5_0",
+    "type": 1
+  },
+  "md5": "507affd3f7852219bab7967bff1d383b",
+  "name": "matplotlib",
+  "package_tarball_full_path": "/Users/erikdahlberg/anaconda3/pkgs/matplotlib-3.8.0-py312hca03da5_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "matplotlib",
+  "sha256": "57b6632368bb5138afc975748103df2711212b43e1d5c20952293bef7dc32b2f",
+  "size": 7790,
+  "subdir": "osx-arm64",
+  "timestamp": 1699241343000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/matplotlib-3.8.0-py312hca03da5_0.conda",
+  "version": "3.8.0"
+}
