@@ -6,7 +6,7 @@ import torchvision.transforms.functional as TF
 from PIL import Image
 from torchvision import transforms
 import matplotlib.pyplot as plt
-from /imageload import ImageLoad
+from models from imageload import ImageLoad
 import numpy as np
 import tqdm
 
@@ -24,6 +24,7 @@ MEAN, STD = [0.3904, 0.2603, 0.1758], [0.3059, 0.2112, 0.1446]
 RE_MEAN = 0
 DEVICE = torch.device("mps")
 NR_EPOCHS = 20
+crop = 540
 
 def transform(image, mask, mean = None, std = None, image_dimensions = None):
     """INPUT: image, mask, with optional inputs: mean [3 channel tensor], standard deviation [3 channel tensor], and image dimensions[(H,W)]
@@ -31,13 +32,16 @@ def transform(image, mask, mean = None, std = None, image_dimensions = None):
     DESC: Applies random horisontal flip, random rotation, and tensor transformation, as well as resizing (if image dimension given), and normalization (if mean and std given)
     """
 
+    image = image[:,crop:,:]
+    mask = mask[:,crop:,:]
+
     # RESIZE
     if image_dimensions:
         image = TF.resize(image, image_dimensions)
         mask = TF.resize(mask, image_dimensions)
     
     # RANDOMLY FLIP HORISONTALLY
-    if np.random.randint(0,1) > 0.5: # Apply horisontal flip
+    if np.random.randint(0,2) > 0.5: # Apply horisontal flip
         image = TF.hflip(image)
         mask = TF.hflip(mask)
 
@@ -116,7 +120,7 @@ MODEL.to(DEVICE)
 ## TRAIN
 def train(loader, model, optimizer, loss_fn): # trains one epoch
     loop = tqdm.tqdm(loader)
-    
+    model.train()
     for idx, (data, targets) in enumerate(loop):
         data, targets = data.to(DEVICE), targets.to(DEVICE)
         outputs = model(data)["out"] # Predict
@@ -160,6 +164,7 @@ def IoU(truth, prediction):
 ## RESULTS
 def result(loader, model, device):
     # visualize image, ground truth mask and predicted mask
+    model.eval()
     dataiter = iter(loader)
     images, masks = next(dataiter) # Extracts the next batch of images
     images, masks = images.to(device), masks.to(device)

@@ -11,12 +11,8 @@ import cv2
 # IMPORTS
 # ----------------------------------------------------------------------------------------------------------------------
 
-MASK_DATA_PATH = "./data/Ground Truth/"
-IMAGE_DATA_PATH = "./data/Original/"
-
-import os
-from PIL import Image
-import numpy as np
+MASK_DATA_PATH = "./datasets/Clinic CVB/Ground Truth/"
+IMAGE_DATA_PATH = "./datasets/Clinic CVB/Original/"
 
 def load(folder, mask = None):
     images = []
@@ -129,16 +125,35 @@ def k_m_plot(data):
     # ax.colorbar(label='Cluster')
     plt.show()
 
+def __apply_gaussian_blur__(img, kernel: (int, int)):
+    assert img is not None, "Null-value loaded to apply blur function"
+    return cv2.GaussianBlur(img,kernel,0)
+
+def __apply_median_blur__(img, k_size: int):
+    assert img is not None, "Null-value loaded to apply blur function"
+    return cv2.medianBlur(img, k_size)
+
+def blurries(path):
+    images = load(path)
+    for image in images:
+        blurred_image = __apply_gaussian_blur__(image, (25, 25))
+        save_path = ""
+
+
 
 
 def __main__():
     images = load(IMAGE_DATA_PATH)
-    masks = load(MASK_DATA_PATH, mask=True)
-    ind, _, contours = square_mask(masks)
+    # masks = load(MASK_DATA_PATH, mask=True)
+    #ind, _, contours = square_mask(masks)
     # _ = apply_masks(images, masks)
-    extract_polyps(ind, images, contours)
-
-
+    #extract_polyps(ind, images, contours)
+    original = images[0]
+    blur = __apply_gaussian_blur__(original, (25,25)) #Kernel ska vara positiv och udda
+    blur = __apply_median_blur__(original, 25) #Kernel ska vara positiv och udda
+    plt.figure()
+    plt.imshow(blur)
+    plt.show()
     #k_m_plot(pca(polyps))
 
 __main__()
